@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+:root{
+    --fonte01: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte02: 'Sriracha', cursive;
+    --fonte03: 'Permanent Marker', cursive;
+}
+html , body {
+    min-height: 100vh;
+    background-color: rgb(201, 221, 238);
+    font-family: var(--fonte01);
+
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+header > h1{
+    font-family: var(--fonte02);
+    padding-top: 20px;
+    font-variant: small-caps;
+    font-size: 5vw;
+
+}
+header > p {
+    padding-bottom: 50px;
+
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: overline;
+}
+section{
+    font-family: var(--fonte03);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-weight: 500;
+    font-size: 1.3em;
+    padding-left: 30px;
+}
+section > p {
+    padding-bottom: 2em;
+}
+section.normal{
+    padding-top: 10vh;
+    background-color: white;
+    color: black;
+
+}
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.103);
+    color:#fff;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.356);
+}
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(14, 13, 13, 0.068);
+    padding: 10px 20px;
+    text-shadow: 1px 1px 0px black;
+    
+
+}
+section#img001{
+    background-image: url("../d012/imagens/background001.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img002{
+    background-image: url("../d012/imagens/background002.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
